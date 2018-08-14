@@ -17,5 +17,7 @@ X_train,X_test,Y_train,Y_test=cross_validation.train_test_split(X,Y,test_size=0.
 clf=LogisticRegression()
 clf.fit(X_train,Y_train)
 clf.score(X_test,Y_test)
-
+Y_pred=clf.predict(X_test)
+confusion_matrix = confusion_matrix(Y_test, Y_pred)
+print(confusion_matrix)
 
