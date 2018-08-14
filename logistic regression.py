@@ -19,5 +19,3 @@ clf.fit(X_train,Y_train)
 clf.score(X_test,Y_test)
 
 
-
-
